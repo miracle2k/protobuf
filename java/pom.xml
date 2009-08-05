@@ -78,7 +78,7 @@
             <configuration>
               <tasks>
                 <mkdir dir="target/generated-sources" />
-                <exec executable="../src/protoc">
+                <exec executable="protoc">
                   <arg value="--java_out=target/generated-sources" />
                   <arg value="--proto_path=../src" />
                   <arg value="../src/google/protobuf/descriptor.proto" />
@@ -96,7 +96,7 @@
             <configuration>
               <tasks>
                 <mkdir dir="target/generated-test-sources" />
-                <exec executable="../src/protoc">
+                <exec executable="protoc">
                   <arg value="--java_out=target/generated-test-sources" />
                   <arg value="--proto_path=../src" />
                   <arg value="--proto_path=src/test/java" />
